@@ -16,6 +16,15 @@ h2,h3{
 h1{
     font-size: 20px;
 }
+.nm{
+    display: inline;
+    padding: 15px 50px;
+}
+.wraper-nm{
+    border-top: 1px solid rgb(233, 230, 230);
+    border-bottom: 1px solid rgb(233, 230, 230);
+    padding: 10px;
+}
 
 
 * {
