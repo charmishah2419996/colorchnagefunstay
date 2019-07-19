@@ -27,10 +27,35 @@ body {font-size: 15px;}
 .grey-div{color: grey;opacity: 0.7;margin-top: 10px;}
 .border-div-last3{border-left: 1px solid rgb(199, 196, 196);}
 .dark-div{font-weight: bold;font-size: 20px;margin-top: 7px;}
-.border-div-last4{border-right: 1px solid rgb(199, 196, 196);}
-.menu-btn{display: none;}
-@media screen and (max-device-width: 1440px) {.border-div {padding: 10px;border: 1px solid black;margin: 20px;}
-    .down-chart-div {padding: 10px;border-top: 1px solid rgb(224, 222, 222);margin-top: 123px;}}
-@media screen and (max-device-width: 1024px) {.no-padding{display: none;}.menu-btn{display: block;padding: 10px;background-color: green;color: white;margin:10px;}.border-div-last4{border-right: 0px;}.bd{border-right: 1px solid rgb(199, 196, 196);}}
+.border-div-last4{border-right:0;}
+
+.menu-btn{
+    display: block;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    margin:10px;
+}
+
+.bd{
+    border-right: 1px solid rgb(199, 196, 196);
+}
+.no-padding{
+    display: none;
+ }
+@media screen and (min-width: 1240px) {
+    .menu-btn{display: none;}
+    .no-padding{
+        display: block;
+     }
+  
+    .border-div-last4{
+        border-right: 1px solid rgb(199, 196, 196);
+    }
+    .bd{
+        border-right:0; 
+    }
+
+}
 
 
