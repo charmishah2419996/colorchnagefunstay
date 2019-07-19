@@ -5,157 +5,134 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/taskv.css">
+    <link rel="stylesheet" href="css/taskv.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript/taskv.js"></script>
   </head>
   <body>
     <section class="container-fluid">
       <div class="row">
-          <div class="first-div">
-            <div class="col-xs-12">
-            <label>Acount</label>
-            </div>
+      <div class="col-lg-2 no-padding" id="mdiv">
+        <label class="web-app-label">UI element</label>
+        <div class="menu-div">
+            <ul class="menu-ul">
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+            </ul>
+        </div>
+        <label class="web-app-label">Web application</label>
+        <div class="menu-div">
+            <ul class="menu-ul">
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+              <li class="menu-li-items"><span class="glyphicon glyphicon-user iconmenu"></span><a href="#">Component</a></li>
+            </ul>
         </div>
       </div>
-      <div class="row">
-          <div class="col-xs-12 col-sm-4">
-             <div class="sec-div sec-div-mar">
-              <h2>Next Payout</h2>
-              <h4>Activity from 4 jan 2017 to 10 jan 2017</h4>
-              <h1>$2,190</h1>
-              <h4>You have made $230 Today</h4>
+      <input type="submit" value="menu" class="menu-btn" id="mbtn" onclick="btnclick()"></button>
+      <section class="col-xs-12 col-lg-10">
+          <div class="row">
+              <div class="col-xs-12">
+                  <div class="first-div">
+                  <label>Acount</label>
+                  </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="sec-div sec-div-mar">
-              <h2>Next Payout</h2>
-              <h4>Activity from 4 jan 2017 to 10 jan 2017</h4>
-              <h1>$2,190</h1>
-              <h4>You have made $230 Today</h4>
+          <div class="row">
+              <div class="col-xs-12">
+                 <div class="first-div sec-first-bar">
+                    <label class="options-item"><a href="#">Acount</a></label>
+                    <label class="options-item"><a href="#">Acount</a></label>
+                    <label class="options-item"><a href="#">Acount</a></label>
+                  </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="sec-div sec-div-mar">
-              <h2>Next Payout</h2>
-              <h4>Activity from 4 jan 2017 to 10 jan 2017</h4>
-              <h1>$2,190</h1>
-              <h4>You have made $230 Today</h4>
-            </div>
-          </div>
-       </div>
-      <div class="row">
-         <div class="col-xs-12 col-sm-6 col-lg-3 thr-div-mar">
-           <div>
-              <img src="./img/random.jpg" class="img-thr"/>
-            </div>
-            <div class="inside-thr">
-              <h3>Magazine images</h3>
-              <h4>Kinfolk|Last Update:21 Dec 2016</h4>
-            </div>
-            <div class="inside-thr-last">
-              <h3>4,870 USD Early Dec 2017</h3>
-              <h4>budget/Salary 10days reamening</h4>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-lg-3 thr-div-mar">
-            <!-- I have told you, don't use lg if it is not necessary -->
-            <div>
-              <img src="./img/random.jpg" class="img-thr"/>
-            </div>
-            <div class="inside-thr">
-              <h3>Magazine images</h3>
-              <h4>Kinfolk|Last Update:21 Dec 2016</h4>    
-            </div>
-            <div class="inside-thr-last">
-              <h3>4,870 USD Early Dec 2017</h3>
-              <h4>budget/Salary 10days reamening</h4>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-lg-3 thr-div-mar">
-            <!-- I have told you, don't use lg if it is not necessary -->
-            <div>
-              <img src="./img/random.jpg" class="img-thr"/>
-            </div>
-            <div class="inside-thr">
-              <h3>Magazine images</h3>
-              <h4>Kinfolk|Last Update:21 Dec 2016</h4>
-
-            </div>
-            <div class="inside-thr-last">
-              <h3>4,870 USD Early Dec 2017</h3>
-              <h4>budget/Salary 10days reamening</h4>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-lg-3 thr-div-mar">
-            <!-- I have told you, don't use lg if it is not necessary -->
-            <div>
-              <img src="./img/random.jpg" class="img-thr"/>
-            </div>
-            <div class="inside-thr">
-              <h3>Magazine images</h3>
-              <h4>Kinfolk|Last Update:21 Dec 2016</h4>
-            </div>
-            <div class="inside-thr-last">
-              <h3>4,870 USD Early Dec 2017</h3>
-              <h4>budget/Salary 10days reamening</h4>
-            </div>
-          </div>
-       </div>
-      <div class="row">
-          <div class="col-xs-12 col-sm-6 fourth-div">
-            <div class="whtt">
-              <label>Invoicing</label>
-            </div>
-            <div class="wht">
-                <div class="wraper-nm">
-                    <h3 class="nm">john</h3>
-                    <h3 class="nm">Doe</h3>
-                    <h3 class="nm">John@example.com</h3>
-                </div>
-                <div class="wraper-nm">
-                    <h3 class="nm">john</h3>
-                    <h3 class="nm">Doe</h3>
-                    <h3 class="nm">John@example.com</h3>
-                    </div>
-                <div class="wraper-nm">
-                    <h3 class="nm">john</h3>
-                    <h3 class="nm">Doe</h3>
-                    <h3 class="nm">John@example.com</h3>
-                </div>
-                <div class="wraper-nm">
-                    <h3 class="nm">john</h3>
-                    <h3 class="nm">Doe</h3>
-                    <h3 class="nm">John@example.com</h3>
-                 </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 fourth-div">
-            <div class="whtt">
-              <label>Invoicing</label>
-            </div>
-            <div class="wht">
-                    <div class="wraper-nm">
-                            <h3 class="nm">john</h3>
-                            <h3 class="nm">Doe</h3>
-                            <h3 class="nm">John@example.com</h3>
-                        </div>
-                        <div class="wraper-nm">
-                            <h3 class="nm">john</h3>
-                            <h3 class="nm">Doe</h3>
-                            <h3 class="nm">John@example.com</h3>
+          <div class="row">
+                  <div class="col-xs-12 col-lg-4">
+                      <div class="sec-div sec-div-mar">
+                            <div class="up-div">
+                                <div class="dark-div">Next Payout</div>
+                                <div class="grey-div">Activity from 4 jan 2017 to 10 jan 2017</div>
                             </div>
-                        <div class="wraper-nm">
-                            <h3 class="nm">john</h3>
-                            <h3 class="nm">Doe</h3>
-                            <h3 class="nm">John@example.com</h3>
+                            <div class="down-chart-div">
+                              <label>Graph chart</label>
+                            </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-lg-4">
+                        <div class="sec-div sec-div-mar">
+                              <div class="border-div">
+                                  <div class="dark-div">Next Payout</div>
+                                  <div class="grey-div">Activity from 4 jan 2017 to 10 jan 2017</div>
+                              </div>
+                              <div class="border-div">
+                                  <div class="dark-div">Next Payout</div>
+                                  <div class="grey-div">Activity from 4 jan 2017 to 10 jan 2017</div>
+                              </div>
                         </div>
-                        <div class="wraper-nm">
-                            <h3 class="nm">john</h3>
-                            <h3 class="nm">Doe</h3>
-                            <h3 class="nm">John@example.com</h3>
-                         </div>
-            </div>
+                  </div>
+                  <div class="col-xs-12 col-lg-4">
+                        <div class="sec-div sec-div-mar">
+                              <div class="row">
+                                      <div class="col-xs-6">
+                                          <div class="dark-div">Next Payout</div>
+                                          <div class="grey-div">Activity from 4 jan 2017 to 10 jan 2017</div>
+                                      </div>
+                                      <div class="col-xs-6">
+                                          <div class="dark-div">Next Payout</div>
+                                          <div class="grey-div">Activity from 4 jan 2017 to 10 jan 2017</div>
+                                      </div>
+                              </div>
+                              <div class="row">
+                                      <div class="col-xs-6">
+                                          <div class="dark-div">Next Payout</div>
+                                          <div class="grey-div">Activity from 4 jan 2017 to 10 jan 2017uihiun iujikjnkmmnjkmnsd jkfrr</div>
+                                      </div>
+                                      <div class="col-xs-6">
+                                          <div class="dark-div">Next Payout</div>
+                                          <div class="grey-div">Activity from 4 jan 2017 to 10 jan 2017</div>
+                                      </div>
+                              </div>
+                        </div>
+                  </div>
+           </div>
+          <div class="row">
+                  <div class="col-xs-12">
+                            <div class="border-div-last">
+                                  <label>Revenuew</label>
+                            </div>
+                            <div> 
+                                  <div class="col-xs-4 col-lg-3 border-div-last2 border-div-last3">
+                                      <div class="grey-div">Gross Earing</div>
+                                      <div class="dark-div">$14000</div>
+                                  </div>
+                                  <div class="col-xs-4 col-lg-3 border-div-last2">
+                                      <div class="grey-div">Gross Earing</div>
+                                      <div class="dark-div">$14000</div>
+                                  </div>
+                                  <div class="col-xs-4 col-lg-3 border-div-last2 bd">
+                                      <div class="grey-div">Gross Earing</div>
+                                      <div class="dark-div">$14000</div>
+                                  </div>
+                                  <div class="col-xs-12 col-lg-3 border-div-last2 border-div-last4">
+                                      <div class="dark-div">summary</div>
+                                      <div class="grey-div">fvejirhfni ewferve rfwrg jwnidfu ish</div>
+                                  </div>
+                            </div>
+                  </div>
           </div>
-        </div>
-    </section>   
-  </body> 
+        </section> 
+      </div>
+    </section> 
+  </body>
+  
 </html>
