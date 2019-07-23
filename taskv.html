@@ -10,36 +10,37 @@
   <body>
     
     <ul class="menu-ul">
-        <li id="li0"><span id="0" hidden>20</span><span>charmi shah</span></li>
-        <li id="li1"><span id="1" hidden >25</span><span>charmi shah</span></li>
-        <li id="li2"><span id="2" hidden >35</span><span>charmi shah</span></li>
-        <li id="li3"><span id="3" hidden >20</span><span>charmi shah</span></li>
-        <li id="li4"><span id="4" hidden >20</span><span>charmi shah</span></li>
-        <li id="li5"><span id="5" hidden >20</span><span>charmi shah</span></li>
+        <li id="li0"><input type="text" id="0" oninput="onchg(id)"/></span><span>charmi shah</span></li>
+        <li id="li1"><input type="text" id="1" oninput="onchg(id)"/></span><span>charmi shah</span></li>
+        <li id="li2"><input type="text" id="2" oninput="onchg(id)"/></span><span>charmi shah</span></li>
+        <li id="li3"><input type="text" id="3" oninput="onchg(id)"/></span><span>charmi shah</span></li>
+        <li id="li4"><input type="text" id="4" oninput="onchg(id)"/></span><span>charmi shah</span></li>
+        <li id="li5"><input type="text" id="5" oninput="onchg(id)"/></span><span>charmi shah</span></li>
     </ul>
-          <button onclick="onchg()">submit</button>         
+               
   </body>
   <script type="text/javascript">
 
 
-    function onchg(){ 
+    function onchg(idd){ 
 
       
-       for(var id=0;id<6;id++)
-       {
-        var y=document.getElementById(id).innerHTML;
+      //  for(var id=0;id<6;id++)
+      //  {
+        var y=document.getElementById(idd).value;
+        var id=document.getElementById(idd).id;
         var c= parseInt(y);
           console.log(c);
           var f = "li" + id;
           console.log(f);
 
-          switch(c)
+          switch(true)
           {
-            case (c=20):
+            case (c>0 && c<20):
               document.getElementById(f).style.backgroundColor="red";
             break;
 
-            case (c>20 || c<31):
+            case (c>21 && c<31):
             document.getElementById(f).style.backgroundColor="blue";
             break;
 
@@ -60,7 +61,7 @@
         //   document.getElementById(f).style.backgroundColor="green";
         // }
 
-       }
+      //  }
       
        
 
