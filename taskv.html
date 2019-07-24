@@ -17,9 +17,66 @@
         <li id="li4"><input type="text" id="4" oninput="onchg(id)"/></span><span>charmi shah</span></li>
         <li id="li5"><input type="text" id="5" oninput="onchg(id)"/></span><span>charmi shah</span></li>
     </ul>
+    <button type="submit" onclick="onclkage()">Age avg & max,min</button>
+               <label id="minlabel">min</label>
+               <label id="avglabel">avg</label>
+               <label id="maxlabel">max</label>
                
   </body>
   <script type="text/javascript">
+
+
+    function onclkage(){
+
+      var avg,max;
+      var n=0,sum=0;
+      
+
+      var minj=0,min=0,maxj=0;
+      for(var id=0;id<6;id++)
+        {
+            var y=document.getElementById(id).value;
+            var kl=0;
+
+            if(y != ""){
+                   n = n+1;
+                   if(n==1){
+                     min=parseInt(y);
+                     max=parseInt(y);
+                   }
+                    
+                    sum=sum+parseInt(y);
+                    avg=sum/n;
+
+                    kl=parseInt(y);
+                    
+                    if(kl<minj){
+                          min=kl;
+                      }
+                      if(kl>maxj){
+                        max=kl;
+                      }
+                       minj=min;
+                       maxj=max;
+                    
+                } 
+               
+                console.log("minimum",min);
+                document.getElementById('minlabel').innerHTML=min;
+                document.getElementById('avglabel').innerHTML=avg;
+                document.getElementById('maxlabel').innerHTML=max;
+                console.log("kl",kl);
+
+        }
+
+       
+        console.log("avg",avg);
+        
+        console.log("min",min);
+
+
+    }
+
 
 
     function onchg(idd){ 
