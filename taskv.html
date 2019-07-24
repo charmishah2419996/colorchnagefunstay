@@ -7,184 +7,103 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/taskv.css">
   </head>
-  <body>
-    
+  <body>    
     <ul class="menu-ul">
-        <li id="li0"><input type="text" id="0" oninput="onchg(id)"/></span><span>charmi shah</span><span id="bp0">10000</span> <span id="penssion0"></span></li>
-        <li id="li1"><input type="text" id="1" oninput="onchg(id)"/></span><span>chandni shah</span><span id="bp1">20000</span><span id="penssion1"></span></li>
-        <li id="li2"><input type="text" id="2" oninput="onchg(id)"/></span><span>charvi shah</span><span id="bp2">50000</span> <span id="penssion2"></span></li>
-        <li id="li3"><input type="text" id="3" oninput="onchg(id)"/></span><span>kervi shah</span><span id="bp3">30000</span>  <span id="penssion3"></span></li>
-        <li id="li4"><input type="text" id="4" oninput="onchg(id)"/></span><span>krumati shah</span><span id="bp4">10000</span><span id="penssion4"></span></li>
-        <li id="li5"><input type="text" id="5" oninput="onchg(id)"/></span><span>karvi shah</span><span id="bp5">70000</span>  <span id="penssion5"></span></li>
+      <li id="li0"><input type="text" id="0" oninput="onchg(id)"/></span><span>charmi shah</span><span id="bp0">10000</span> <span id="penssion0"></span></li>
+      <li id="li1"><input type="text" id="1" oninput="onchg(id)"/></span><span>chandni shah</span><span id="bp1">20000</span><span id="penssion1"></span></li>
+      <li id="li2"><input type="text" id="2" oninput="onchg(id)"/></span><span>charvi shah</span><span id="bp2">50000</span> <span id="penssion2"></span></li>
+      <li id="li3"><input type="text" id="3" oninput="onchg(id)"/></span><span>kervi shah</span><span id="bp3">30000</span>  <span id="penssion3"></span></li>
+      <li id="li4"><input type="text" id="4" oninput="onchg(id)"/></span><span>krumati shah</span><span id="bp4">10000</span><span id="penssion4"></span></li>
+      <li id="li5"><input type="text" id="5" oninput="onchg(id)"/></span><span>karvi shah</span><span id="bp5">70000</span>  <span id="penssion5"></span></li>
     </ul>
     <button type="submit" onclick="onclkage()">Age avg & max,min</button>
     <button type="submit" onclick="onclkbasicpay()">Basic pay</button>
-      <label id="minlabel">min</label>
-      <label id="avglabel">avg</label>
-      <label id="maxlabel">max</label>
-               
-  </body>
-  <script type="text/javascript">
+    <label id="minlabel">min</label>
+    <label id="avglabel">avg</label>
+    <label id="maxlabel">max</label>
 
+    <script type="text/javascript">
+      var experince_no=0;
+      function condition(exp){          
+        switch(true) {
+          case (experince_no>0 && experince_no<20):
+          return "2";
+          break;
 
+          case (experince_no>21 && experince_no<31):
+          return "5";
+          break;
 
-    // function onclkage(){
-
-    //   var avg,max;
-    //   var n=0,sum=0;
-      
-
-    //   var minj=0,min=0,maxj=0;
-    //   for(var id=0;id<6;id++)
-    //     {
-    //         var y=document.getElementById(id).value;
-    //         var kl=0;
-
-    //         if(y != ""){
-
-    //                n = n+1;
-    //                if(n==1){
-    //                  min=parseInt(y);
-    //                  max=parseInt(y);
-    //                }
-                    
-    //                 sum=sum+parseInt(y);
-    //                 avg=sum/n;
-
-    //                 kl=parseInt(y);
-                    
-    //                 if(kl<minj){
-    //                       min=kl;
-    //                   }
-    //                   if(kl>maxj){
-    //                     max=kl;
-    //                   }
-    //                    minj=min;
-    //                    maxj=max;
-                    
-    //             } 
-               
-    //             console.log("minimum",min);
-    //             document.getElementById('minlabel').innerHTML=min;
-    //             document.getElementById('avglabel').innerHTML=avg;
-    //             document.getElementById('maxlabel').innerHTML=max;
-    //             console.log("kl",kl);
-
-    //     }
-
-       
-    //     console.log("avg",avg);
-        
-    //     console.log("min",min);
-
-
-    // }
-
-
-
-    // function onchg(idd){ 
-
-      
-    //   //  for(var id=0;id<6;id++)
-    //   //  {
-    //     var y=document.getElementById(idd).value;
-    //     var id=document.getElementById(idd).id;
-    //     var c= parseInt(y);
-    //       console.log(c);
-    //       var f = "li" + id;
-    //       console.log(f);
-
-    //       switch(true)
-    //       {
-    //         case (c>0 && c<20):
-    //           document.getElementById(f).style.backgroundColor="red";
-              
-    //         break;
-
-    //         case (c>21 && c<31):
-    //         document.getElementById(f).style.backgroundColor="blue";
-    //         break;
-
-    //         default:
-    //         document.getElementById(f).style.backgroundColor="green";
-          
-    //       }
-
-
-
-    //     // if(c>0 && c<21){
-    //     //   document.getElementById(f).style.backgroundColor="red";
-    //     // }
-    //     // if(c>20 && c<31){
-    //     //   document.getElementById(f).style.backgroundColor="blue";
-    //     // }
-    //     // if(c>30 && c<41){
-    //     //   document.getElementById(f).style.backgroundColor="green";
-    //     // }
-
-    //   //  }
-      
-       
-
-      
-         
-    // }
-
-
-
-
-    var experince_no=0;
-    function condition(exp){
-          
-            switch(true)
-              {
-                case (experince_no>0 && experince_no<20):
-                  
-                  return "2";
-                  
-                break;
-
-                case (experince_no>21 && experince_no<31):
-                
-                return "5";
-                break;
-
-                default:
-               
-                return "10";
-              
-              }
-}
-
-
-
-
-    function onclkbasicpay(){
-  
-     
-       for(var id=0;id<6;id++)
-       {
-            var experince=document.getElementById(id).value;
-            if(experince !=""){
+          default:        
+          return "10";        
+        }
+      }
+      function onclkbasicpay(){
+        for(var id=0;id<6;id++) {
+          var experince=document.getElementById(id).value;
+          if(experince !=""){
             var idd = "bp"+id;
             var basic_pay=document.getElementById(idd).innerHTML;
             experince_no =parseInt(experince);
             var basic_pay_no=parseInt(basic_pay);
-           var Interst_rate=condition( experince_no);
-           var Interst_rate_no=parseInt(Interst_rate);
+            var Interst_rate=condition( experince_no);
+            var Interst_rate_no=parseInt(Interst_rate);
             var pension=basic_pay_no*Interst_rate_no/100;
             var penid="penssion"+id;
-            
             document.getElementById(penid).innerHTML="pension="+pension;
           }
-       }
+        }
+      }
+      function onclkage(){
+        var avg,max;
+        var n=0,sum=0;
+        var minj=0,min=0,maxj=0;
+        for(var id=0;id<6;id++) {
+          var y=document.getElementById(id).value;
+          var kl=0;
+          if(y != "") {
+            n = n+1;
+            if(n==1) {
+              min=parseInt(y);
+              max=parseInt(y);
+            }
+            sum=sum+parseInt(y);
+            avg=sum/n;
 
-     
-    }
+            kl=parseInt(y);
 
-   
-    
+            if(kl<minj){
+              min=kl;
+            }
+            if(kl>maxj){
+              max=kl;
+            }
+            minj=min;
+            maxj=max;
+          } 
+          document.getElementById('minlabel').innerHTML=min;
+          document.getElementById('avglabel').innerHTML=avg;
+          document.getElementById('maxlabel').innerHTML=max;
+        }
+      }
+      function onchg(idd) {
+        var y=document.getElementById(idd).value;
+        var id=idd;      
+        var c= parseInt(y);
+        var f = "li" + id;
+        switch(true) {
+          case (c>0 && c<20):
+          document.getElementById(f).style.backgroundColor="red";
+          break;
 
-  </script>
-  
+          case (c>21 && c<31):
+          document.getElementById(f).style.backgroundColor="blue";
+          break;
+
+          default:
+          document.getElementById(f).style.backgroundColor="green";
+        }
+      }
+    </script>
+  </body>  
 </html>
