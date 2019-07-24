@@ -26,16 +26,20 @@
       var experince_no=0;
       function condition(exp){          
         switch(true) {
-          case (experince_no>0 && experince_no<20):
+          case (experince_no>0 && experince_no<10):
           return "2";
           break;
 
-          case (experince_no>21 && experince_no<31):
+          case (experince_no>11 && experince_no<20):
           return "5";
           break;
 
+          case (experince_no>21 && experince_no<30):
+          return "10";
+          break;
+
           default:        
-          return "10";        
+          return "15";        
         }
       }
       function onclkbasicpay(){
